@@ -1,0 +1,4 @@
+mycommand() {
+    mkdir -p /tmp/coding-style && rm -rf /tmp/coding-style/coding-style-reports.log && coding-style . /tmp/coding-style/ > /dev/null 2>&1 && /bin/python /home/peralban/.banana/my_mouli.py $1
+}
+alias banana=mycommand
