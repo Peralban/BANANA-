@@ -51,7 +51,25 @@ ERROR = [
     ["C-A1", "CONSTANT POINTERS"],
     ["C-A2", "Prefer the most accurate types possible according to the use of the data."],
     ["C-A3", "Files must end with a line break."],
-    ["C-A4", "Global variables and functions that are not used outside his file should be a static."]
+    ["C-A4", "Global variables and functions that are not used outside his file should be a static."],
+    ["O1", "The repository must not contain compiled (.o, .a, .so, . . . ), temporary or unnecessary files"],
+    ["O2", "Sources in a Haskell program should only have extension .hs."],
+    ["O3", "A Haskell project must be organised in modules, each of which should match a logical entity, and group all the functions and data structures associated with that entity. Every haskell file (including Main) should declare a module."],
+    ["O4", "The name of a file should match the name of its module. Therefore, files and modules must be named in UpperCamelCase and in English."],
+    ["O5", "All modules should explicitly declare their exported definitions. Except the Main module, all modules are expected to export at least one definition."],
+    ["G1", "Every haskell file should start with a standard Epitech header:"],
+    ["E1", "All language extensions are forbidden except if the project's subject says otherwise."],
+    ["T1", "All top level bindings must have an accompanying type signature."],
+    ["M1", "Mutable variables are strictly forbidden."],
+    ["M2", "Functions performing unsafe operations are strictly forbidden. This forbids the use of all functions labeled as unsafe, such as unsafePerformIO"],
+    ["F1", "A function should only do one thing, not mix the different levels of abstraction and respect the principle of single responsibility (a function must only be changed for one reason)."],
+    ["F2", "The name of a function should define the task it executes and should contain a verb."],
+    ["F3", "A Line must be less than 80 characters long."],
+    ["F4", "A Function body must be 10 lines or less"],
+    ["V1", "All identifier names should be in English, according to the lowerCamelCase convention"],
+    ["C4", "Nested If statements are stricly forbidden."],
+    ["C5", "Guards and if statements which can be expressed as pattern matchings must be expressed as such"],
+    ["D1", "The Do notation is forbidden unless it contains a generator (a statement with a left arrow)."]
 ]
 
 class Severity(Enum):

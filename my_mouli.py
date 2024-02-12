@@ -20,20 +20,19 @@ def array_sort(array, order):
                 info.append(cel)
     sorted_array = fatal + major + minor + info
     return sorted_array
-                
 
 def count_error(content):
     nb_error = [0, 0, 0, 0, 0]
 
     for cel in content:
         if cel[Step.TYPE.value] == "FATAL":
-            nb_error[Severity.FATAL.value] += 1 
+            nb_error[Severity.FATAL.value] += 1
         if cel[Step.TYPE.value] == "MAJOR":
-            nb_error[Severity.MAJOR.value] += 1 
+            nb_error[Severity.MAJOR.value] += 1
         if cel[Step.TYPE.value] == "MINOR":
-            nb_error[Severity.MINOR.value] += 1 
+            nb_error[Severity.MINOR.value] += 1
         if cel[Step.TYPE.value] == "INFO":
-            nb_error[Severity.INFO.value] += 1 
+            nb_error[Severity.INFO.value] += 1
         nb_error[Severity.ALL.value] += 1
     return nb_error
 
@@ -103,8 +102,6 @@ def display_all(array, nb_error, sort_method):
     if sort_method == sortOrder.LINE:
         for cel in array:
             print("\t" + cel[Step.CODE.value] + " at " + Style.BRIGHT + cel[Step.LINE.value] + Style.RESET_ALL + " l in " + Style.BRIGHT + cel[Step.FILE.value].replace('./', '', 1) + Style.RESET_ALL + ": " + get_desc(cel[Step.CODE.value]))
-
-                
 
 def main():
     sort_method = error_case()
