@@ -43,7 +43,7 @@ ERROR = [
     ["C-F2", "The name of a function must define the task it executes and must contain a verb."],
     ["C-F8", "There must be no comment within a function."],
     ["C-L2", "Each indentation level must be done by using 4 spaces."],
-    ["C-L3", "One and only one space character must be used. And just ot separate"],
+    ["C-L3", "One and only one space character must be used. Add just one to separate"],
     ["C-L4", "CURLY BRACKETS"],
     ["C-L6", "No blank lines. Except between variable and remainder of the function"],
     ["C-V1", "NAMING IDENTIFIERS"],
